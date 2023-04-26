@@ -1,0 +1,231 @@
+body{
+    max-width: 1440px;
+    margin: auto;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#boxes{
+    margin-top: 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    height: 500px;
+    border-radius: 20px;
+    -webkit-box-shadow: px 0px 0px 0px rgba(66, 68, 90, 1);
+        -moz-box-shadow: 0px 0px 0px 0px rgba(66, 68, 90, 1);
+        box-shadow: 2px 4px 20px 0px rgba(66, 68, 90, 0.137);
+}
+
+/*styling for left box starts here */
+
+#result{
+    background-image: linear-gradient(hsl(252, 93%, 63%), hsl(241, 78%, 52%));
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    height: 500px;
+    width: 370px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#your-result {
+    color: hsl(241, 100%, 89%);
+    margin-bottom: 40px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+#result-circle{
+    display: block;
+    border-radius: 50%;
+    background-image: linear-gradient(hsla(241, 72%, 46%, 0.678),hsla(252, 55%, 51%, 0.164));
+    text-align: center;
+    width: 170px;
+    height: 170px;
+}
+
+#result-number{
+    display: block;
+    color: hsl(0, 0%, 100%);
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: -5px;
+}
+
+#max-result{
+    display: block;
+    color: hsla(241, 100%, 89%, 0.527);
+    font-size: 18px;
+}
+
+#great{
+    margin-top: 30px;
+    font-size: 26px;
+    color:hsl(221, 100%, 96%) ;
+    font-weight: 800;
+}
+
+#result > p{
+    width: 70%;
+    color: hsl(241, 100%, 89%);
+    font-weight: 500;
+}
+
+/*styling for left box ends here
+
+styling for right box starts here*/
+
+#summary{
+    width: 320px;
+}
+
+#score-containers{
+    display: flex;
+    flex-direction: column;
+}
+
+.summary-container{
+    color: hsl(224, 30%, 27%);
+    padding: 10px;
+    border-radius: 7px;
+    width: 270px;
+    height: 35px;
+    margin: 7px 0 7px 0 ;
+    vertical-align: middle;
+    display: flex;
+    font-size: 17px;
+
+}
+
+
+.scores{
+    margin-left:190px;
+    margin-top: 6px;
+    color: rgba(109, 109, 109, 0.692);
+    position: absolute;
+    font-weight: 800;
+
+}
+
+#reaction{
+    background-color: hsla(0, 100%, 67%, 0.090);
+    color: hsla(0, 82%, 59%, 0.7);
+    font-weight: 800;
+}
+
+#memory{
+    background-color: hsla(39, 100%, 56%, 0.090);
+    color: hsla(39, 78%, 58%, 0.849);
+    font-weight: 800;
+}
+
+#verbal{
+    background-color:hsla(166, 100%, 37%, 0.090);
+    color: hsla(166, 100%, 37%, 0.7);
+    font-weight: 800;
+}
+
+#visual {
+    background-color: hsla(234, 85%, 45%, 0.090);
+    color: hsla(234, 85%, 45%, 0.7);
+    font-weight: 800;
+}
+
+
+
+.score-text{
+margin-left: 7px;
+}
+
+.icon-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.black{
+    color: black;
+    margin-right: 5px;
+}
+
+#top-summary-text{
+    font-weight: 800;
+    font-size: 23px;
+    position: absolute;
+    margin-top: -60px;
+}
+
+button{
+    border: none;
+    width: 280px;
+    height: 50px;
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: rgb(46, 58, 90);
+    position: absolute;
+    margin-top: 27px;
+    border-radius: 30px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-image: linear-gradient(hsl(252, 93%, 63%), hsl(241, 78%, 52%));
+}
+
+@media all and (max-width:677px){
+    #boxes{
+        display: flex;
+        flex-direction: column;
+        max-width: 677px;
+        width: 100%;
+        margin-top: 90px;
+        box-shadow: none;
+    }
+
+    #result{
+        padding-top: 80px;
+        padding-bottom: 20px;
+        width: 100%;
+    }
+
+    #your-result{
+        margin-bottom: 20px;
+    }
+    
+    #result > p{
+        width: 60%;
+    }
+
+    #great{
+        margin-top: 20px;
+    }
+
+    #top-summary-text{
+        margin-top: -45px;
+        font-size: 20px;
+    }
+    
+    #summary{
+        margin-top: 15px;
+    }
+
+    button{
+        margin-top: 15px;
+    }
+
+    .attribution{
+        display: none;
+    }
+}
